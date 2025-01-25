@@ -1,0 +1,728 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/* Default (light mode) styles */
+body {
+    background-color: #DADADA;
+    color: #232323;
+    font-family: "mudstone-sans", sans-serif;
+    border-color: #232323;
+    
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #232323;
+    color: white;
+    border-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.logo img {
+    height: 70px;
+    padding: 20px 20px;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 5;
+    font-family: "mudstone-sans", sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a:hover {
+color: #1A8CC7;
+}
+
+.nav-links li {
+    padding: 15px 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: inherit;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 17px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+/* -------------------------------------------------------------------------------------------------- */
+#scrollToTopBtn {
+  font-family: "mudstone-sans", sans-serif;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16pt;
+    border: none;
+    outline: none;
+    background-color: #1A8CC7;
+    color: inherit;
+    cursor: pointer;
+    padding: 15px;
+    width: 75px;
+    height: 75px;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: inherit;
+    line-height: 50px;
+    text-align: center;
+    scroll-behavior: smooth;
+  }
+  
+  #scrollToTopBtn:hover {
+    padding: 15px;
+    width: 85px;
+    height: 85px;
+  }
+
+/* -------------------------------------------------------------------------------------------------- */
+  .grid-container {
+    font-family: "mudstone-sans", sans-serif;
+    display: grid;
+    grid-template-areas:
+      'main1 main1 main1 right1 right1 right1'
+      'sec1 sec1 sec1 sec1 sec1 sec1'
+      'sec2 sec2 sec2 sec2 sec2 sec2'
+      'sec3 sec3 sec3 sec3 sec3 sec3'
+      'sec4 sec4 sec4 sec44 sec44 sec44'
+      'sec5 sec5 sec5 sec5 sec5 sec5'
+      'sec6 sec6 sec6 sec6 sec6 sec6'
+      'sec7 sec7 sec7 sec7 sec7 sec7'
+      'sec8 sec8 sec8 sec8 sec8 sec8'
+      ;
+    gap: 10px;
+    margin: 50px;
+    grid-template-columns: repeat(6, 1fr); /* Defines six equal-width columns */
+    grid-template-rows: repeat(8, fit-content);  /* Defines eight fixed-height rows */
+  
+  }
+  
+  .grid-container > div {
+    padding: 40px;
+  }
+  /* -------------------------------------------------------------------------------------------------- */
+  .item1 {
+    grid-area: main1;
+  }
+  
+  .item1 p {
+    color: inherit;
+    font-size: 25pt;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1.3;
+    width: 80%;
+    padding: 0 0 40px 30%;
+    margin: 0 auto;
+  }
+  
+  .item1 h2 {
+    color: #1A8CC7;
+    font-size: 30pt;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1.3;
+    padding: 150px 0 0 30%;
+    margin: 0 auto;
+  }
+
+  .item1 a {
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 20px;
+    font-family: "mudstone-sans", sans-serif;
+    background-color: #1A8CC7;
+    color: inherit;
+    margin: 0 auto 0 30%;
+    padding: 20px 20px 20px 20px
+  }
+
+  .item1 a:hover {
+    padding: 25px 25px 25px 25px
+    }
+  /* -------------------------------------------------------------------------------------------------- */
+  .item2 {
+    grid-area: right1;
+    background-image: url("../assets/Asset 3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 500px;
+    margin-left: 50px;
+    
+  }
+  /* -------------------------------------------------------------------------------------------------- */
+  .item3 {
+    grid-area: sec1;
+    height: fit-content;
+  }
+  
+  .item3 p {
+    text-align: center;
+    font-size: 55pt;
+    font-weight: normal;
+  }
+  /* -------------------------------------------------------------------------------------------------- */
+  .item4 {
+    grid-area: sec2;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%; /* Adjust this percentage for different sizes */
+    max-width: 1550px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+
+}
+
+/* Make iframe fill the container */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
+ /* -------------------------------------------------------------------------------------------------- */ 
+  .item5 {
+    grid-area: sec3;
+    display: flex;
+    align-items: center;  /* Align items vertically */
+    justify-content: center; /* Centers the whole block */
+    text-decoration: none;
+  }
+  .item5 p {
+    text-align: center;
+    font-size: 55pt;
+    font-weight: normal;
+  }
+
+  .item5 h2 {
+    text-align: center;
+    font-size: 35pt;
+    font-weight: normal;
+    padding: 0 100px 0 100px;
+  }
+
+  .homebutton {
+    position: block;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 35px;
+    border-style:none ;
+    font-size: 20px;
+    font-family: "mudstone-sans", sans-serif;
+    background-color: #1A8CC7;
+    color: inherit;
+    margin: 5px 0;
+    padding: 15px 15px 15px 15px;
+    cursor: pointer;
+    width: fit-content;
+  }
+  
+  .homebutton a {
+    text-decoration: none;
+    color: inherit;
+  }
+/* -------------------------------------------------------------------------------------------------- */  
+
+.item6 {
+  grid-area: sec4;
+  display: flex;
+  align-items: center;  /* Align items vertically */
+  justify-content: center; /* Centers the whole block */
+  padding: 20px;
+  text-decoration: none;
+  
+}
+
+
+.liftbtn {
+  text-decoration: none;
+  position: relative;
+  margin: 20px auto; /* Centers the div horizontally */
+  padding: 20px;
+  border-radius: 35px;
+  border: 3px solid;
+  border-color: inherit;
+  max-width: 80%; /* Ensures it doesn't get too wide */
+  width: fit-content;
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  text-align: center;
+}
+
+/* Adjusts text size and spacing */
+.liftbtn p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Makes sure links inherit color and are well-spaced */
+.liftbtn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.slidebtn {
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  border: none;
+  font-size: 1.2rem;
+  font-family: "mudstone-sans", sans-serif;
+  background-color: #1A8CC7;
+  color: inherit; /* Ensures text is readable */
+  margin: 5px 0;
+  padding: 15px;
+  cursor: pointer;
+  width: fit-content; /* Makes buttons fill the container */
+  max-width: 300px; /* Prevents them from being too wide */
+}
+
+.slidebtn:hover {
+  padding: 20px 20px 20px 20px;
+  }
+
+  .item66 {
+    grid-area: sec44;
+    display: flex;
+    align-items: center;  /* Align items vertically */
+    justify-content: center; /* Centers the whole block */
+    gap: 1px;  /* Reduces space between buttons & slideshow */
+    padding: 20px;
+    
+  }
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  display: none;
+}
+
+#slideshow1 {
+  display: block; /* Show the first slideshow by default */
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 25px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.mySlides img {
+  width: 100%;  /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 600px; /* Set a max height if needed */
+  object-fit: cover; /* Ensures images cover the area without stretching */
+  border-color: #1A8CC7;
+  border: 4px solid;
+}
+
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* -------------------------------------------------------------------------------------------------- */ 
+
+.item7 {
+  grid-area: sec5;
+}
+.item7 p {
+  text-align: center;
+  font-size: 55pt;
+  font-weight: normal;
+}
+/* -------------------------------------------------------------------------------------------------- */ 
+.item8 {
+  grid-area: sec6;
+}
+
+.item8 a {
+  text-decoration: none;
+  color: inherit;
+}
+.contact-info{
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+
+.card{
+  background: inherit;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  cursor: pointer;
+}
+
+.card-icon{
+  font-size: 28px;
+  background: #1A8CC7;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: #1A8CC7;
+  transform: scale(1.6);
+}
+
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+/* -------------------------------------------------------------------------------------------------- */ 
+
+
+
+
+ /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 1140px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px 20px;
+        color: inherit;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #1A8CC7;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    button {
+        padding: 10px 20px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #1A8CC7;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    .logo img {
+        height: 40px;
+        padding: 10px 5px;
+    }
+/* -------------------------------------------------------------------------------------------------- */
+    #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        background-color: #1A8CC7;
+        color: inherit;
+        cursor: pointer;
+        padding: 15px;
+        width: 55px;
+        height: 55px;
+        border: 3px solid;
+        border-radius: 50%;
+        border-color: inherit;
+        line-height: 20px;
+        text-align: center;
+        scroll-behavior: smooth;
+      }
+/* -------------------------------------------------------------------------------------------------- */
+
+.grid-container {
+  font-family: "mudstone-sans", sans-serif;
+  display: grid;
+  grid-template-areas:
+    'main1 main1 main1 main1 main1 main1'
+    'right1 right1 right1 right1 right1 right1'
+    'sec1 sec1 sec1 sec1 sec1 sec1'
+    'sec2 sec2 sec2 sec2 sec2 sec2'
+    'sec3 sec3 sec3 sec3 sec3 sec3'
+     'sec44 sec44 sec44 sec44 sec44 sec44'
+    'sec4 sec4 sec4 sec4 sec4 sec4'
+    'sec5 sec5 sec5 sec5 sec5 sec5'
+    'sec6 sec6 sec6 sec6 sec6 sec6'
+    ;
+  gap: 10px;
+  margin: 5px;
+  grid-template-columns: repeat(6, 1fr); /* Defines six equal-width columns */
+  grid-template-rows: repeat(8, fit-content);  /* Defines eight fixed-height rows */
+}
+
+.grid-container > div {
+  padding: 40px;
+  box-sizing: border-box; /* Ensures padding is included in the width/height */
+}
+
+.item1 p {
+  color: inherit;
+  font-size: 20pt;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.3;
+  width: 100%;
+  padding: 0 0 20px 5px;
+  margin: 0 auto;
+}
+
+.item1 h2 {
+  color: #1A8CC7;
+  font-size: 25pt;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.3;
+  padding: 10px 0 0 5px;
+  margin: 0 auto;
+}
+
+.item1 a {
+  text-decoration: none;
+  border-radius: 35px;
+  font-size: 20px;
+  font-family: "mudstone-sans", sans-serif;
+  background-color: #1A8CC7;
+  color: inherit;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item2 {
+  grid-area: right1;
+  height: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.item3 p {
+  text-align: center;
+  font-size: 30pt;
+  font-weight: normal;
+}
+
+.contact-info{
+  flex-direction: column;
+  width: 50%;
+}
+.card{
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+}
+
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.item5 P {
+  text-align: center;
+  font-size: 30pt;
+}
+.item5 h2 {
+  text-align: center;
+  font-size: 30pt;
+}
+
+
+.liftbtn {
+  padding: 10px;
+  max-width: 80%;
+}
+
+.liftbtn p {
+  font-size: 1.5rem;
+}
+
+.slidebtn {
+  font-size: 1rem;
+  padding: 10px;
+  max-width: 250px;
+}
+
+
+.prev, .next {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.text {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+}
+
+
+
+.item7 P {
+  text-align: center;
+  font-size: 30pt;
+}
+
+
+
+
+}
