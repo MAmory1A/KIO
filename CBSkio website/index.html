@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ely7zmd.css">
+    
+    
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/Logo3.png" alt="Logo">
+        </div>
+        <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Functies</a></li>
+            <li><a href="#contact">Meer weten</a></li>
+        </ul>
+    </div>
+        <button id="theme-toggle">
+            <i id="moon-icon" class="fas fa-sun" style="display: none; color: white;"></i>
+            <i id="sun-icon" class="fas fa-moon" style="display: none; color: black;"></i>
+        </button>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="grid-container">
+<div class="item1">
+    <h2>Globalisering verandert de wereld. </h2>
+    <p>Duik in onze animatie en ontdek hoe deze kracht economie, cultuur en samenleving beïnvloedt!
+    </p>
+    <a href="#about">Begin de reis</a>
+</div>
+
+<div class="item2"></div>
+
+<div class="item3">
+    <p id="about">Wie zijn we?</p>
+</div>
+
+<div class="item4">
+  
+  <div class="video-container">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/ynmn0Re-8p0" title="Het verhaal van Kio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+  </div>
+  
+
+<div class="item5">
+    <p id="services">Ons verhaal</p>
+</div>
+
+<div class="item6">
+
+  <div class="liftbtn">
+    <p>Animatie foto's</p>
+    <button class="slidebtn" onclick="showSlideshow(1)">Globaliseringsonderzoek</button>
+    <button class="slidebtn" onclick="showSlideshow(2)">Waardeketens</button>
+    <button class="slidebtn" onclick="showSlideshow(3)">Bedrijvendemografie</button>
+    <button class="slidebtn" onclick="showSlideshow(4)">Internationaliseringsmonitor</button>
+    <button class="slidebtn" onclick="showSlideshow(5)">Nederlandshandelsland</button>
+  </div>
+
+  <div class="liftbtn">
+    <p>Animaties</p>
+    <a href="./pagina/story1.html"> <button class="slidebtn">Bekijk animatie</button></a>
+    <a href="./pagina/story2.html"> <button class="slidebtn">Bekijk animatie</button></a>
+    <a href="./pagina/story3.html"> <button class="slidebtn">Bekijk animatie</button></a>
+    <a href="./pagina/story4.html"> <button class="slidebtn">Bekijk animatie</button></a>
+    <a href="./pagina/story5.html"> <button class="slidebtn">Bekijk animatie</button></a>
+  </div>
+
+</div>
+<div class="item66">
+  <div id="slideshow1" class="slideshow-container"> 
+  
+      <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./assets/Globaliseringsonderzoek.png" style="width:100%">
+      <div class="text">Globaliseringsonderzoek</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./assets/Globaliseringsonderzoek1.png" style="width:100%">
+      <div class="text">Globaliseringsonderzoek</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./assets/Globaliseringsonderzoek2.png" style="width:100%">
+      <div class="text">Globaliseringsonderzoek</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+    <a class="next" onclick="plusSlides(1, 1)">❯</a>
+     </div>
+  <div id="slideshow2" class="slideshow-container"> 
+  
+      <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./assets/Waardekentenonderzoek.png" style="width:100%">
+          <div class="text">Waardekentenonderzoek</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./assets/Waardekentenonderzoek1.png" style="width:100%">
+          <div class="text">Waardekentenonderzoeko</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./assets/Waardekentenonderzoek2.png" style="width:100%">
+          <div class="text">Waardekentenonderzoek</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1, 2)">❮</a>
+        <a class="next" onclick="plusSlides(1, 2)">❯</a>
+  </div>
+  <div id="slideshow3" class="slideshow-container"> 
+      
+      <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./assets/Bedrijvendemografie.png" style="width:100%">
+          <div class="text">Bedrijvendemografie</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./assets/Bedrijvendemografie1.png" style="width:100%">
+          <div class="text">Bedrijvendemografie</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./assets/Bedrijvendemografie2.png" style="width:100%">
+          <div class="text">Bedrijvendemografie</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1, 3)">❮</a>
+        <a class="next" onclick="plusSlides(1, 3)">❯</a>
+  </div>
+  <div id="slideshow4" class="slideshow-container">
+      
+      <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./assets/Internationaliseringsmonitor.png" style="width:100%">
+          <div class="text">Internationaliseringsmonitor</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./assets/Internationaliseringsmonitor1.png" style="width:100%">
+          <div class="text">Internationaliseringsmonitor</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./assets/Internationaliseringsmonitor2.png" style="width:100%">
+          <div class="text">Internationaliseringsmonitor</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1, 4)">❮</a>
+        <a class="next" onclick="plusSlides(1, 4)">❯</a>
+  </div>
+  <div id="slideshow5" class="slideshow-container"> 
+      
+      <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./assets/Nederland Handelsland.png" style="width:100%">
+          <div class="text">Nederland Handelsland</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./assets/Nederland Handelsland1.png" style="width:100%">
+          <div class="text">Nederland Handelsland</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./assets/Nederland Handelsland2.png" style="width:100%">
+          <div class="text">Nederland Handelsland</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1, 5)">❮</a>
+        <a class="next" onclick="plusSlides(1, 5)">❯</a>
+  </div>
+
+</div>
+<div id="contact"class="item7">
+  <p>Meer weten?</p>
+</div>
+<div class="item8">
+  <div class="contact-info">
+   <a href="https://cmdmaastricht.nl/mms/index.html"> <div class="card">
+      <i class="card-icon fas fa-link"></i>
+      <p>Multimediastories</p>
+    </div></a>
+
+    <a href="https://www.cbs.nl/nl-nl/dossier/dossier-globalisering"><div class="card">
+      <i class="card-icon fas fa-link"></i>
+      <p>Dossier Globalisering </p>
+    </div></a>
+  </div>
+</div>
+    </div>
+
+
+
+
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Scroll to Top">Top</button>
+    <script src="./js/script.js"></script>
+</body>
+</html>
